@@ -1,0 +1,156 @@
+.heading {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--text);
+  text-align: center;
+  margin: 0 0 var(--gap-lg);
+}
+
+.adder {
+  display: flex;
+  gap: var(--gap-sm);
+  margin-bottom: var(--gap-md);
+}
+
+.inputTodo {
+  flex: 1;
+  min-width: 0;
+  padding: 10px 14px;
+  font-size: 16px;
+  font-family: inherit;
+  color: var(--text);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.inputTodo::placeholder {
+  color: var(--text-muted);
+}
+
+.inputTodo:focus-visible {
+  border-color: var(--accent);
+}
+
+.btn {
+  font-family: inherit;
+  font-size: 16px;
+  color: var(--text);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 10px 14px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.btn:active {
+  background: var(--accent-soft);
+}
+
+.btnAdd {
+  color: var(--accent);
+  border-color: var(--accent-strong);
+  background: var(--accent-soft);
+  font-weight: 500;
+}
+
+.btnAdd:hover {
+  color: #fff;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.filterPanel {
+  display: flex;
+  gap: var(--gap-sm);
+  margin-bottom: var(--gap-md);
+}
+
+.btnFilter {
+  flex: 1;
+  font-size: 14px;
+  padding: 8px 12px;
+  color: var(--text-muted);
+}
+
+.btnFilter:hover {
+  color: var(--accent);
+}
+
+.btnFilter.active {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  font-weight: 500;
+}
+
+.todos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-sm);
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--gap-md);
+  padding: 12px 16px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: opacity 0.15s ease, border-color 0.15s ease;
+}
+
+.todo:hover {
+  border-color: var(--accent-strong);
+}
+
+.todo-true {
+  background: var(--accent);
+  opacity: 0.6;
+}
+
+.todo-true .todo-text {
+  text-decoration: line-through;
+  color: var(--text-muted);
+}
+
+.todo-text {
+  flex: 1;
+  text-align: left;
+  word-break: break-word;
+}
+
+.action {
+  display: flex;
+  gap: var(--gap-sm);
+  flex-shrink: 0;
+}
+
+.action .btn {
+  padding: 4px 10px;
+  font-size: 18px;
+  line-height: 1;
+  min-width: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
